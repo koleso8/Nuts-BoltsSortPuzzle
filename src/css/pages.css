@@ -1,0 +1,9 @@
+.pages {
+  li {
+    list-style: disc;
+  }
+
+  .pages-list {
+    padding-left: 20px;
+  }
+}

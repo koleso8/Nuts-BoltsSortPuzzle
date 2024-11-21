@@ -1,9 +1,8 @@
 :root {
   --font-family: 'Kanit', sans-serif;
   --second-family: 'ABeeZee', sans-serif;
-  --text: #282828;
+  --text: #eaeaea;
   --disabled: #6d6d6d;
-  --active: #ffbd00;
-  --white: #eaeaea;
+  --yellow: #ffbd00;
   --transition: 0.3s cubic-bezier(0.41, 0.6, 0.52, 0.93);
 }
