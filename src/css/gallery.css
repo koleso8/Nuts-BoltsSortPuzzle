@@ -1,6 +1,6 @@
 .gallery-swiper {
-  width: 900px;
-  padding: 0 42px;
+  width: 820px;
+  padding: 0 32px;
 }
 
 .wrap {
@@ -26,11 +26,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  @media only screen and (min-width: 1200px) {
-  }
-}
-
-.gallery-item {
 }
 
 .galleryImg {

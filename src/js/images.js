@@ -30,6 +30,19 @@ import gallery6_desk2x from '../img/desktop_gallery_sixth2x.png';
 
 import about_desktop1x from '../img/desktop_about1x.png';
 
+document.getElementById('about_img').innerHTML = `
+  <picture>
+    <source
+      media="(min-width: 1200px)"
+      srcset="${about_desktop1x} 1x,${about_desktop1x} 2x"
+      type="image/png"
+    />
+    <img
+      src="${about_desktop1x} "
+      alt="img_screenshot"
+      loading="lazy"
+    />
+  </picture>`;
 export const galleryImages = {
   about_desktop1x,
 
