@@ -1,0 +1,69 @@
+.gallery-swiper {
+  width: 900px;
+  padding: 0 42px;
+}
+.wrap {
+  display: flex;
+  align-items: center;
+}
+
+.gallery {
+  padding-bottom: 56px;
+  display: flex;
+
+  @media only screen and (min-width: 1200px) {
+    padding-bottom: 104px;
+  }
+}
+.gallery-list {
+  padding: 24px 0;
+  @media only screen and (min-width: 1200px) {
+    padding: 42px 0;
+  }
+}
+.gallery-item picture {
+  display: flex;
+  justify-content: center;
+}
+.galleryImg {
+  box-shadow: 2px 1px 40px #d72ff9;
+  border-radius: 28px;
+}
+
+/* SWIPER */
+.swiper-button-disabled svg {
+  fill: var(--disabled);
+}
+
+.advantages-swiper-button-next > svg,
+.reviews-swiper-button-next > svg,
+.gallery-swiper-button-next > svg {
+  height: 100%;
+}
+
+.gallery-swiper-button-prev {
+  display: none;
+  @media only screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    padding: 0 60px;
+    height: 560px;
+    fill: var(--text);
+  }
+}
+.advantages-swiper-button-next,
+.reviews-swiper-button-next,
+.gallery-swiper-button-next {
+  display: none;
+  @media only screen and (min-width: 1200px) {
+    display: flex;
+    height: 560px;
+    align-items: center;
+    padding: 0 60px;
+    fill: var(--text);
+    transform: rotate(180deg);
+    cursor: pointer;
+    border-radius: 60px;
+    background-color: var(--accent-stroke);
+  }
+}
