@@ -45,12 +45,6 @@ async function makeGallery() {
       imgDesk1: galleryImages.gallery6_desk1x,
       imgDesk2: galleryImages.gallery6_desk2x,
     },
-    {
-      imgMob1: galleryImages.gallery7_mob1x,
-      imgMob2: galleryImages.gallery7_mob2x,
-      imgDesk1: galleryImages.gallery7_desk1x,
-      imgDesk2: galleryImages.gallery7_desk2x,
-    },
   ];
   renderGallery(images);
 }

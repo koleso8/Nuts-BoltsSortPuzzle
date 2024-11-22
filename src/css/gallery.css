@@ -24,10 +24,25 @@
 .gallery-item picture {
   display: flex;
   justify-content: center;
+  align-items: center;
+  @media only screen and (min-width: 1200px) {
+  }
 }
+
+.gallery-item {
+}
+
 .galleryImg {
-  box-shadow: 2px 1px 40px #d72ff9;
-  border-radius: 28px;
+  @media only screen and (min-width: 1200px) {
+    outline: 8px solid #fff;
+    box-shadow: 2px 1px 40px #d72ff9;
+    border-radius: 28px;
+  }
+  border-radius: 20px;
+  box-shadow: 2px 1px 20px #d72ff9;
+  width: 200px;
+  height: 440px;
+  object-fit: cover;
 }
 
 /* SWIPER */
@@ -46,7 +61,7 @@
   @media only screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
-    padding: 0 60px;
+    padding: 0 40px;
     height: 560px;
     fill: var(--text);
   }
@@ -59,7 +74,7 @@
     display: flex;
     height: 560px;
     align-items: center;
-    padding: 0 60px;
+    padding: 0 40px;
     fill: var(--text);
     transform: rotate(180deg);
     cursor: pointer;
