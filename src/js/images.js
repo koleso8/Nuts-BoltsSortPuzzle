@@ -28,9 +28,11 @@ import gallery6_mob2x from '../img/mobile_gallery_sixth2x.png';
 import gallery6_desk1x from '../img/desktop_gallery_sixth1x.png';
 import gallery6_desk2x from '../img/desktop_gallery_sixth2x.png';
 
-import icon from '../img/sprite.svg';
+import about_desktop1x from '../img/desktop_about1x.png';
 
 export const galleryImages = {
+  about_desktop1x,
+
   gallery1_mob1x,
   gallery1_mob2x,
   gallery1_desk1x,
