@@ -17,10 +17,10 @@
 }
 
 body {
-  font-weight: 500;
   display: flex;
   color: var(--text);
   font-family: var(--font-family);
+
   flex-direction: column;
   max-width: 100vw;
   min-height: 100vh;
