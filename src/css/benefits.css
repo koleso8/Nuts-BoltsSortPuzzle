@@ -35,7 +35,9 @@
 
 .benefits {
   padding-bottom: 18px;
+  margin-bottom: 64px;
   @media only screen and (min-width: 1200px) {
+    margin-bottom: 80px;
     padding-bottom: 0px;
   }
 }

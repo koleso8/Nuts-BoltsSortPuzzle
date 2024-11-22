@@ -2,6 +2,7 @@
   width: 900px;
   padding: 0 42px;
 }
+
 .wrap {
   display: flex;
   align-items: center;
@@ -50,12 +51,12 @@
   fill: var(--disabled);
 }
 
-.advantages-swiper-button-next > svg,
 .reviews-swiper-button-next > svg,
 .gallery-swiper-button-next > svg {
   height: 100%;
 }
 
+.gallery-swiper-button-next,
 .gallery-swiper-button-prev {
   display: none;
   @media only screen and (min-width: 1200px) {
@@ -66,8 +67,7 @@
     fill: var(--text);
   }
 }
-.advantages-swiper-button-next,
-.reviews-swiper-button-next,
+
 .gallery-swiper-button-next {
   display: none;
   @media only screen and (min-width: 1200px) {
@@ -78,7 +78,5 @@
     fill: var(--text);
     transform: rotate(180deg);
     cursor: pointer;
-    border-radius: 60px;
-    background-color: var(--accent-stroke);
   }
 }
