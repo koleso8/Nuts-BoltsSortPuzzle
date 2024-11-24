@@ -1,5 +1,11 @@
 .header_container{
-width: 288px;
+  position: fixed;
+width: 100%;
+z-index: 1000;
+background-color:#1D004280;
+;
+;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
 
 }
 .header-nav-list{
@@ -32,12 +38,17 @@ width: 288px;
 /* Mobile menu styles */
 
  .menu-overlay {
- 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: end;
    
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+ left:0;
+   z-index: 1000;
+   background-color: rgba(18, 18, 18, .4);
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+   
+    
   /* Черный фон с прозрачностью */
     /* Скрыто по умолчанию */
     /* background:     rgba(0, 0, 0, 0.8);
@@ -52,17 +63,16 @@ width: 288px;
 
 .menu-overlay.is-hidden {
     visibility: hidden;
-    opacity: 1;
+    opacity: 0;
+
 }
 
 .menu {
-    margin-top: auto;
-    width: 162px;
-    height: 44px;
+   margin-top: 27px; 
     list-style: none;
-    padding: 0;
-    text-align: center;
     display: flex;
+    justify-content: center;
+    align-items: end;
     gap:8px;
     flex-direction: column;
     color: #282828;
@@ -71,9 +81,10 @@ width: 288px;
 }
 
 .menu li {
-    
+    width: 162px;
+    height: 44px;
     background-color:#EAEAEA;
-    padding: 10px 55.5px;
+    padding: 10px;
     font-size: 16px;
     border-radius: 16px
     ;
@@ -89,9 +100,11 @@ width: 288px;
 }
 
 .close-menu {
+    margin-bottom: 10px;
     position: absolute;
-    top: 32px;
-    right: 32px;
+    z-index: 1001;
+    top:0;
+    right: 26px;
     background-color: transparent;
     border: none;
     

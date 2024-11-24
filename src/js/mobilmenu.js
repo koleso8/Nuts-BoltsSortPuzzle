@@ -3,6 +3,7 @@
       openMenuBtn: document.querySelector(".js-open-menu"),
       closeMenuBtn: document.querySelector(".js-close-menu"),
       menuOverlay: document.querySelector("[data-modal]"),
+      menuItems: document.querySelectorAll('.menu a')
   };
 
   const toggleMenu = () => {
@@ -18,4 +19,10 @@
           toggleMenu();
       }
   });
+  refs.menuItems.forEach(item => {
+    item.addEventListener('click', () => {
+      toggleMenu();
+    });
+  });
+
 })();
