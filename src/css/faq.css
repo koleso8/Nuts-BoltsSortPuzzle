@@ -19,16 +19,42 @@
 
 
 .faq-list-item{
+    position: relative;
     margin-bottom: 16px ;
     padding: 8px;
-border-radius: 8px;
-background: #FFBD00;
-color:   #282828;
-display: flex;
-align-items: center;
-justify-content: space-between;
+    border-radius: 8px;
+    background: #FFBD00;
+    font-size: 16px;
+    font-family: "Kanit", serif;
+    font-weight: 400;
+    font-style: normal;
+    color:   #282828;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
+.faq-icon{
+    position: absolute;
+    top: 25%;
+    left: 90%;
+}
+.faq-answer {
+font-size: 24px;
+  display: none;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+  }
 
+  .faq-list-item.open .faq-answer {
+    display: block; }
+
+  .faq-list-item.open .faq-icon {
+    transform: rotate(180deg);
+  }
+ 
 @media (min-width:1200px) {
     .faq-container{
         width: 928px;
