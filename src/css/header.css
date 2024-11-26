@@ -1,6 +1,10 @@
 .header_container {
-  margin-top: 10px;
-  width: 288px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  background-color: #1d004280;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 .header-nav-list {
   display: none;
@@ -25,10 +29,15 @@
 /* Mobile menu styles */
 
 .menu-overlay {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: end;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  right: 0px;
+  z-index: 1000;
+  padding: 30px 20px;
+  background-color: rgba(18, 18, 18, 0.4);
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 
   /* Черный фон с прозрачностью */
   /* Скрыто по умолчанию */
@@ -44,25 +53,30 @@
 
 .menu-overlay.is-hidden {
   visibility: hidden;
-  opacity: 1;
+  opacity: 0;
 }
 
 .menu {
-  margin-top: auto;
-  width: 162px;
-  height: 44px;
+  margin-top: 27px;
   list-style: none;
-  padding: 0;
-  text-align: center;
   display: flex;
+  justify-content: center;
+  align-items: end;
   gap: 8px;
   flex-direction: column;
   color: #282828;
 }
 
+.menu li:hover,
+.menu li:active {
+  background-color: var(--yellow);
+  transition: var(--transition);
+}
 .menu li {
+  width: 162px;
+  height: 44px;
   background-color: #eaeaea;
-  padding: 10px 55.5px;
+  padding: 10px;
   font-size: 16px;
   border-radius: 16px;
   text-align: center;
@@ -74,9 +88,13 @@
 }
 
 .close-menu {
+  margin-bottom: 10px;
+  transform: rotate(90deg);
+  transition: var(--transition);
   position: absolute;
-  top: 32px;
-  right: 32px;
+  z-index: 1001;
+  top: 10px;
+  right: 12px;
   background-color: transparent;
   border: none;
 }
@@ -90,14 +108,12 @@
   .header_container {
     width: 100%;
     margin: 0 auto;
-    padding-left: 42px;
-    padding-right: 42px;
+    padding: 0 42px;
   }
   .header-burger {
     display: none;
   }
   .header-nav-list {
-    margin-top: 10px;
     display: flex;
     justify-content: space-between;
     align-items: end;
@@ -117,9 +133,9 @@
   .header-nav {
     display: flex;
     width: 100%;
-    align-items: start;
+    align-items: center;
     justify-content: space-between;
     gap: 340px;
-    margin-top: 21px;
+    padding: 20px 0;
   }
 }
