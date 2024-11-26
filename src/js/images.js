@@ -29,6 +29,8 @@ import gallery6_desk1x from '../img/desktop_gallery_sixth1x.png';
 import gallery6_desk2x from '../img/desktop_gallery_sixth2x.png';
 
 import about_desktop1x from '../img/desktop_about1x.png';
+import logo1x from '../img/webp/logo-1x.png';
+import logo2x from '../img/webp/logo-2x.png';
 
 document.getElementById('about_img').innerHTML = `
   <picture>

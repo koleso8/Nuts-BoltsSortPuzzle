@@ -4,6 +4,7 @@
     display: flex;
     gap: 100px;
     align-items: center;
+    justify-content: space-between;
     margin-bottom: 80px;
   }
   .description {

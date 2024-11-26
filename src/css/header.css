@@ -8,32 +8,25 @@ background-color:#1D004280;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
 
 }
-.header-nav-list{
-    display: none;
-
+.header-nav-list {
+  display: none;
 }
-.header_icons{
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-
+.header_icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.header-burger{
-    
-    border: none;
-    background-color: transparent;
-
+.header-burger {
+  border: none;
+  background-color: transparent;
 }
-.header-logo{
-    width: 32px;
-    height: 32px;
+.header-logo {
+  width: 32px;
+  height: 32px;
 }
 
-.burger-svg{
-    fill: azure;
-   
+.burger-svg {
+  fill: azure;
 }
 /* Mobile menu styles */
 
@@ -50,12 +43,12 @@ background-color:#1D004280;
    
     
   /* Черный фон с прозрачностью */
-    /* Скрыто по умолчанию */
-    /* background:     rgba(0, 0, 0, 0.8);
+  /* Скрыто по умолчанию */
+  /* background:     rgba(0, 0, 0, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
-  
+
     transition: opacity 0.3s ease, visibility 0.3s ease;
     visibility: hidden;
     opacity: 0; */
@@ -94,9 +87,7 @@ background-color:#1D004280;
 }
 
 .menu a {
-   
-    text-decoration: none;
-  
+  text-decoration: none;
 }
 
 .close-menu {
@@ -111,46 +102,44 @@ background-color:#1D004280;
 }
 
 .is-hidden {
-    visibility: hidden;
-    opacity: 0;
-}   
+  visibility: hidden;
+  opacity: 0;
+}
 
-@media (min-width:1200px) {
-    .header_container{
-        width: 100%;
-        margin: 0 auto;
-        padding-left: 42px;
-        padding-right: 42px;
-    }
-    .header-burger{
-        display:none;
-
-    }
-    .header-nav-list{
-       margin-top: 10px;
-        display: flex;
-        justify-content: space-between;
-        align-items: end;
-        font-size: 24px;
-        gap:20px;
-        font-family: "ABeeZee", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-      
-    }
-    .menu-overlay{
-        display: none;
-    }
-    .header-logo{
-        width: 86px;
-        height: 86px;
-    }
-    .header-nav{
-        display: flex;
-        align-items: start;
-        justify-content: center;
-        gap:340px;
-        margin-top: 21px;
-
-    }
+@media (min-width: 1200px) {
+  .header_container {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 42px;
+    padding-right: 42px;
+  }
+  .header-burger {
+    display: none;
+  }
+  .header-nav-list {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    font-size: 24px;
+    gap: 20px;
+    font-family: 'ABeeZee', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .menu-overlay {
+    display: none;
+  }
+  .header-logo {
+    width: 86px;
+    height: 86px;
+  }
+  .header-nav {
+    display: flex;
+    width: 100%;
+    align-items: start;
+    justify-content: space-between;
+    gap: 340px;
+    margin-top: 21px;
+  }
 }
