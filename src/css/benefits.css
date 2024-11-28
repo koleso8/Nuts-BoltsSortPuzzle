@@ -7,17 +7,29 @@
 .benefits-text {
   font-weight: 300;
   font-size: 16px;
+  text-align: center;
+  @media only screen and (min-width: 1200px){
+    font-size: 24px;
+  }
 }
-
+.title{
+  @media screen and (min-width:1200px){
+    margin-bottom: 42px;
+  }
+}
 .benefits-list {
+  
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 8px;
   @media only screen and (min-width: 1200px) {
-    height: 300px;
+    width: 1116px;
+    height: 414px;
     flex-wrap: wrap;
-    gap: 20px;
+    gap:42px 196px;
+    
+
   }
 }
 .benefits-item {
@@ -26,6 +38,15 @@
   text-align: center;
   @media only screen and (min-width: 1200px) {
     width: 460px;
+  }
+}
+
+.benefits-text {
+  font-weight: 300;
+  font-size: 16px;
+  text-align: center;
+  @media only screen and (min-width: 1200px){
+    font-size: 24px;
   }
 }
 .benefits-icon {

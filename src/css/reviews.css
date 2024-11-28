@@ -1,7 +1,14 @@
-.reviews-swiper {
-  width: 900px;
-  padding: 0 42px;
+
+
+.reviews-header{
+  margin-bottom: 24px;
+  text-align: center;
+  font-family: 'Kanit', serif;
+    font-weight: 400;
+    font-style: normal;
 }
+
+
 
 .reviews {
   margin-bottom: 64px;
@@ -108,4 +115,12 @@
     fill: var(--text);
     cursor: pointer;
   }
+}
+
+@media (min-width:1200px) {
+  .reviews-swiper{
+    width: 928px;
+    padding: 0 94px;
+  }
+  
 }
