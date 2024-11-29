@@ -1,4 +1,8 @@
 .faq-container {
+  font-size: 16px !important;
+  @media only screen and (min-width: 1200px) {
+    font-size: 24px !important;
+  }
   width: 288px;
   display: flex;
   flex-direction: column;
@@ -36,12 +40,14 @@
   top: 25%;
   right: 2%;
 }
+.faq-question {
+  font-weight: 500;
+}
+
 .faq-answer {
-  font-size: 24px;
   display: none;
   margin-top: 10px;
-  font-size: 14px;
-  color: #555;
+  font-weight: 300;
 }
 
 .faq-list-item.open .faq-answer {
@@ -56,32 +62,29 @@
 @media (min-width: 1200px) {
   .faq-container {
     width: 100%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .faq-title {
     width: 928px;
     height: 63px;
     text-align: center;
     margin-bottom: 42px;
-font-size: 42px;
+    font-size: 42px;
     font-family: 'Kanit', serif;
     font-weight: 400;
     font-style: normal;
- 
   }
   .faq-list {
-
     display: inline;
     width: 928px;
   }
-  .faq-list-item{
+  .faq-list-item {
     padding: 17.5px;
     font-size: 24px;
     font-family: 'Kanit', serif;
     font-weight: 400;
     font-style: normal;
   }
-
 }
