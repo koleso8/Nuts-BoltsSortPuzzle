@@ -1,48 +1,49 @@
 <header class="header">
-  <div class="header_container">
-    <div class="header_icons">
-      <div class="header-nav">
-        <a href="" class="header-logo"
-          ><picture>
-            <source media="(min-width: 768px)" type="image/png" />
-
-            <source
-              media="(max-width: 767px)"
-              srcset="../img/webp/logo-1x.png 1x, ../img/webp/logo-2x.png 2x"
-              type="image/png"
-            />
-            <img
-              src="../img/webp/logo-2x.png"
-              alt="logo"
-              class="header-logo"
-              loading="lazy"
-            /> </picture
-        ></a>
-        <nav>
-          <ul class="header-nav-list">
-            <li class="header-nav-item">
-              <a class="header-nav-link" href="#gallery">Gallery</a>
-            </li>
-            <li class="header-nav-item">
-              <a class="header-nav-link" href="#about"> About Us</a>
-            </li>
-            <li class="header-nav-item">
-              <a class="header-nav-link" href="#benefits">Benefits</a>
-            </li>
-            <li class="header-nav-item">
-              <a class="header-nav-link" href="#reviews">Reviews</a>
-            </li>
-            <li class="header-nav-item">
-              <a class="header-nav-link" href="#faq">FAQ</a>
-            </li>
-          </ul>
-        </nav>
+  <div class="container">
+    <div class="header_container">
+      <div class="header_icons">
+        <div class="header-nav">
+          <a href="" class="header-logo"
+            ><picture>
+              <source media="(min-width: 768px)" type="image/png" />
+              <source
+                media="(max-width: 767px)"
+                srcset="../img/webp/logo-1x.png 1x, ../img/webp/logo-2x.png 2x"
+                type="image/png"
+              />
+              <img
+                src="../img/webp/logo-2x.png"
+                alt="logo"
+                class="header-logo"
+                loading="lazy"
+              /> </picture
+          ></a>
+          <nav>
+            <ul class="header-nav-list">
+              <li class="header-nav-item">
+                <a class="header-nav-link" href="#gallery">Gallery</a>
+              </li>
+              <li class="header-nav-item">
+                <a class="header-nav-link" href="#about"> About Us</a>
+              </li>
+              <li class="header-nav-item">
+                <a class="header-nav-link" href="#benefits">Benefits</a>
+              </li>
+              <li class="header-nav-item">
+                <a class="header-nav-link" href="#reviews">Reviews</a>
+              </li>
+              <li class="header-nav-item">
+                <a class="header-nav-link" href="#faq">FAQ</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <button class="header-burger js-open-menu" aria-label="Open menu">
+          <svg width="26" height="24">
+            <use href="../img/sprite.svg#icon-burger"></use>
+          </svg>
+        </button>
       </div>
-      <button class="header-burger js-open-menu" aria-label="Open menu">
-        <svg width="26" height="24">
-          <use href="../img/sprite.svg#icon-burger"></use>
-        </svg>
-      </button>
     </div>
   </div>
 </header>

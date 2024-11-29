@@ -2,6 +2,15 @@
   width: 820px;
   padding: 0 32px;
 }
+.gallery-section {
+  padding-top: 64px;
+  h2 {
+    margin-bottom: 0;
+  }
+  @media only screen and (min-width: 1200px) {
+    padding-top: 80px;
+  }
+}
 
 .wrap {
   display: flex;
@@ -11,7 +20,9 @@
 .gallery {
   padding-bottom: 56px;
   display: flex;
-
+  title {
+    margin-bottom: 0 !important;
+  }
   @media only screen and (min-width: 1200px) {
     padding-bottom: 104px;
   }

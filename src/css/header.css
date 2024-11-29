@@ -1,17 +1,17 @@
 .header_container {
-  position: fixed;
-  width: 100%;
-  z-index: 1000;
-  background-color: #1d004280;
-  padding: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-
+.header {
+  padding: 10px 0;
+  position: fixed;
+  z-index: 1000;
+  width: 100vw;
+  background-color: #1d004280;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
 .no-scroll {
-  overflow: hidden; 
-  height: 100%;  
-
+  overflow: hidden;
+  height: 100%;
 }
 .header-nav-list {
   display: none;
